@@ -2,7 +2,7 @@
 The idea of this project is to practice the concepts of the microservice architecture, based on Spring implementation.
 As I'm a beginner student of this new entire world, I'll try to make things as much simple as I can, at least in the beginning.
 
-##Architecture
+## Architecture
 Our sample microservices-based system consists of the following modules:
 
 * <strong>gateway-service</strong> - a module that uses Spring Cloud Netflix Zuul to acts as a proxy/gateway in our architecture.
