@@ -10,22 +10,22 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8061/eureka/
 
-spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: employee-service
-          uri: lb://employee-service
-          predicates:
-            - Path=/employee/**
-        - id: department-service
-          uri: lb://department-service
-          predicates:
-            - Path=/department/**
-        - id: organization-service
-          uri: lb://organization-service
-          predicates:
-            - Path=/organization/**
+#spring:
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#      routes:
+#        - id: employee-service
+#          uri: lb://employee-service
+#          predicates:
+#            - Path=/employee/**
+#        - id: department-service
+#          uri: lb://department-service
+#          predicates:
+#            - Path=/department/**
+#        - id: organization-service
+#          uri: lb://organization-service
+#          predicates:
+#            - Path=/organization/**
