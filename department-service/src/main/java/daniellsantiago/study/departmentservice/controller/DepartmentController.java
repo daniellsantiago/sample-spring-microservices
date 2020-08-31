@@ -11,13 +11,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/department")
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Slf4j
 public class DepartmentController {
     private final DepartmentRepository repository;
     private final EmployeeClient employeeClient;
 
-    @PostMapping("/")
+    @PostMapping
     public Department add(@RequestBody Department department) {
         log.info("Department add: {}", department);
         return repository.add(department);
@@ -29,7 +30,7 @@ public class DepartmentController {
         return repository.findById(id);
     }
 
-    @GetMapping("/")
+    @GetMapping
     public List<Department> findAll() {
         log.info("Department find all");
         return repository.findAll();

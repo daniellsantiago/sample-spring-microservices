@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/organization")
 @Slf4j
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class OrganizationController {
