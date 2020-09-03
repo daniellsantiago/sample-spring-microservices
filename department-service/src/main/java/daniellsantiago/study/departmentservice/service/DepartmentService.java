@@ -3,6 +3,7 @@ package daniellsantiago.study.departmentservice.service;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import daniellsantaigo.study.commonclasses.model.Department;
 import daniellsantaigo.study.commonclasses.repository.DepartmentRepository;
+import daniellsantiago.study.departmentservice.client.EmployeeClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DepartmentService {
     private final DepartmentRepository departmentRepository;
+    private final EmployeeClient employeeClient;
+
 
     public Department add(Department department) {
         return departmentRepository.add(department);
@@ -31,6 +34,12 @@ public class DepartmentService {
     }
 
     public List<Department> findByOrganizationFallback(Long organizationId) {
-        return List.of(new Department(1L, "Teste"));
+        return List.of(new Department(organizationId, "Teste"));
+    }
+
+    public List<Department> findByOrganizationWithEmployees(Long organizationId) {
+        List<Department> departments = departmentRepository.findByOrganization(organizationId);
+        departments.forEach(department -> department.setEmployees(employeeClient.findByDepartment(department.getId())));
+        return departments;
     }
 }

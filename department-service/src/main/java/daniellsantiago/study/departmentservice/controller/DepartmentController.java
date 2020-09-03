@@ -1,7 +1,6 @@
 package daniellsantiago.study.departmentservice.controller;
 
 import daniellsantaigo.study.commonclasses.model.Department;
-import daniellsantiago.study.departmentservice.client.EmployeeClient;
 import daniellsantiago.study.departmentservice.service.DepartmentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -16,7 +15,6 @@ import java.util.List;
 @Slf4j
 public class DepartmentController {
     private final DepartmentService departmentService;
-    private final EmployeeClient employeeClient;
 
     @PostMapping
     public Department add(@RequestBody Department department) {
@@ -45,8 +43,6 @@ public class DepartmentController {
     @GetMapping("/organization/{organizationId}/with-employees")
     public List<Department> findByOrganizationWithEmployees(@PathVariable("organizationId") Long organizationId) {
         log.info("Department find: organizationId={}", organizationId);
-        List<Department> departments = departmentService.findByOrganization(organizationId);
-        departments.forEach(d -> d.setEmployees(employeeClient.findByDepartment(d.getId())));
-        return departments;
+        return departmentService.findByOrganizationWithEmployees(organizationId);
     }
 }
