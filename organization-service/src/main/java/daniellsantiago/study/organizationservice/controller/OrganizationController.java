@@ -52,4 +52,10 @@ public class OrganizationController {
         log.info("Organization find: id={}", id);
         return organizationService.findByIdWithEmployees(id);
     }
+
+    @GetMapping("/fallback")
+    public String fallback(){
+        log.info("Fallback method");
+        return "Imagine something useful being done to continue the application flow";
+    }
 }
