@@ -21,14 +21,20 @@ public class GatewayServiceApplication {
 				.route("employee-service", p -> p
 					.path("/employee/**")
 						.filters(f -> f
-							 .hystrix(config -> config.setName("employeefb")
+							 .hystrix(config -> config.setName("employeeCB")
 									.setFallbackUri("forward:/employee/fallback")))
 						.uri("lb://employee-service"))
 				.route("department-service", p -> p
 					.path("/department/**")
+						.filters(f -> f
+							.hystrix(config -> config.setName("departmentCB")
+									.setFallbackUri("forward:/department/fallback")))
 					.uri("lb://department-service"))
 				.route("organization-service", p -> p
 					.path("/organization/**")
+						.filters(f -> f
+								.hystrix(config -> config.setName("organizationCB")
+									.setFallbackUri("forward:/organization/fallback")))
 					.uri("lb://organization-service"))
 				.build();
 	}
