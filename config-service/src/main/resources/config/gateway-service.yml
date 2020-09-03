@@ -10,12 +10,19 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8061/eureka/
 
-#spring:
-#  cloud:
-#    gateway:
-#      discovery:
-#        locator:
-#          enabled: true
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000
 #      routes:
 #        - id: employee-service
 #          uri: lb://employee-service
