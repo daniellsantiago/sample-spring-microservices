@@ -36,6 +36,9 @@ public class GatewayServiceApplication {
 								.hystrix(config -> config.setName("organizationCB")
 									.setFallbackUri("forward:/organization/fallback")))
 					.uri("lb://organization-service"))
+				.route("auth-service", p -> p
+						.path("/auth/**")
+						.uri("lb://auth-service"))
 				.build();
 	}
 }
