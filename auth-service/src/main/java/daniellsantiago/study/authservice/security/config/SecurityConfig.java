@@ -1,8 +1,8 @@
 package daniellsantiago.study.authservice.security.config;
 
-import daniellsantaigo.study.commonclasses.property.JwtConfiguration;
 import daniellsantiago.study.authservice.security.filter.JwtUsernameAndPasswordAuthenticationFilter;
-import daniellsantiago.study.authservice.security.token.TokenCreator;
+import daniellsantiago.study.commonclasses.security.property.JwtConfiguration;
+import daniellsantiago.study.commonclasses.security.token.TokenCreator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -36,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .and()
             .addFilter(new JwtUsernameAndPasswordAuthenticationFilter(authenticationManager(), jwtConfiguration, tokenCreator))
             .authorizeRequests()
-            .antMatchers(jwtConfiguration.getLoginUrl()).permitAll()
+                .antMatchers(jwtConfiguration.getLoginUrl()).permitAll()
             .anyRequest().authenticated();
     }
 

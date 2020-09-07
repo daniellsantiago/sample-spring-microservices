@@ -1,7 +1,7 @@
 package daniellsantiago.study.authservice.service;
 
-import daniellsantaigo.study.commonclasses.model.ApplicationUser;
-import daniellsantaigo.study.commonclasses.repository.ApplicationUserRepository;
+import daniellsantiago.study.commonclasses.model.ApplicationUser;
+import daniellsantiago.study.commonclasses.repository.ApplicationUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
