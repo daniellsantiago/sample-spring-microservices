@@ -11,10 +11,9 @@ import org.springframework.context.annotation.Configuration;
 @Setter
 public class JwtConfiguration {
 
-    private String loginUrl = "/login/**";
+    private String loginUrl = "/login";
     private int expiration = 3000;
     private String privateKey = "qxBEEQv7E8aviX1KUcd0iF5ve5COUPAr";
-    private String type = "signed";
     private Header header = new Header();
 
     @Getter
