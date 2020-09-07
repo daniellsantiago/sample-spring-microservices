@@ -1,7 +1,7 @@
 package daniellsantiago.study.organizationservice;
 
-import daniellsantaigo.study.commonclasses.model.Organization;
-import daniellsantaigo.study.commonclasses.repository.OrganizationRepository;
+import daniellsantiago.study.commonclasses.model.Organization;
+import daniellsantiago.study.commonclasses.repository.OrganizationRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
