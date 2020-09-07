@@ -40,6 +40,7 @@ public class GatewayServiceApplication {
 					.uri("lb://organization-service"))
 				.route("auth-service", p -> p
 						.path("/auth/**")
+						.filters(f -> f.rewritePath("/auth/login", "/login"))
 						.uri("lb://auth-service"))
 				.build();
 	}
