@@ -1,8 +1,8 @@
 package daniellsantiago.study.departmentservice.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import daniellsantaigo.study.commonclasses.model.Department;
-import daniellsantaigo.study.commonclasses.repository.DepartmentRepository;
+import daniellsantiago.study.commonclasses.model.Department;
+import daniellsantiago.study.commonclasses.repository.DepartmentRepository;
 import daniellsantiago.study.departmentservice.client.EmployeeClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

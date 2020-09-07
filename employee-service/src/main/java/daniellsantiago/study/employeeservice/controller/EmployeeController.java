@@ -1,7 +1,7 @@
 package daniellsantiago.study.employeeservice.controller;
 
-import daniellsantaigo.study.commonclasses.model.Employee;
-import daniellsantaigo.study.commonclasses.repository.EmployeeRepository;
+import daniellsantiago.study.commonclasses.model.Employee;
+import daniellsantiago.study.commonclasses.repository.EmployeeRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

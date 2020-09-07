@@ -1,7 +1,7 @@
 package daniellsantiago.study.departmentservice;
 
-import daniellsantaigo.study.commonclasses.model.Department;
-import daniellsantaigo.study.commonclasses.repository.DepartmentRepository;
+import daniellsantiago.study.commonclasses.model.Department;
+import daniellsantiago.study.commonclasses.repository.DepartmentRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;

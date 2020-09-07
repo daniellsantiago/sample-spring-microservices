@@ -1,7 +1,7 @@
 package daniellsantiago.study.employeeservice;
 
-import daniellsantaigo.study.commonclasses.model.Employee;
-import daniellsantaigo.study.commonclasses.repository.EmployeeRepository;
+import daniellsantiago.study.commonclasses.model.Employee;
+import daniellsantiago.study.commonclasses.repository.EmployeeRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;

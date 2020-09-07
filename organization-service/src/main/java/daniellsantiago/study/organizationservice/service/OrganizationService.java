@@ -1,8 +1,8 @@
 package daniellsantiago.study.organizationservice.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import daniellsantaigo.study.commonclasses.model.Organization;
-import daniellsantaigo.study.commonclasses.repository.OrganizationRepository;
+import daniellsantiago.study.commonclasses.model.Organization;
+import daniellsantiago.study.commonclasses.repository.OrganizationRepository;
 import daniellsantiago.study.organizationservice.client.DepartmentClient;
 import daniellsantiago.study.organizationservice.client.EmployeeClient;
 import lombok.RequiredArgsConstructor;

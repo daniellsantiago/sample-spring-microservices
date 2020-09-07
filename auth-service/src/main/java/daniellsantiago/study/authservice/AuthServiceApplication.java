@@ -1,8 +1,7 @@
 package daniellsantiago.study.authservice;
 
-import daniellsantaigo.study.commonclasses.model.ApplicationUser;
-import daniellsantaigo.study.commonclasses.property.JwtConfiguration;
-import daniellsantaigo.study.commonclasses.repository.ApplicationUserRepository;
+import daniellsantiago.study.commonclasses.model.ApplicationUser;
+import daniellsantiago.study.commonclasses.repository.ApplicationUserRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;

@@ -1,8 +1,8 @@
-package daniellsantaigo.study.commonclasses.repository;
+package daniellsantiago.study.commonclasses.repository;
 
 
 
-import daniellsantaigo.study.commonclasses.model.Employee;
+import daniellsantiago.study.commonclasses.model.Employee;
 
 import java.util.ArrayList;
 import java.util.List;

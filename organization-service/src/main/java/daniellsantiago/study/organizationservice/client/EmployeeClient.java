@@ -1,6 +1,6 @@
 package daniellsantiago.study.organizationservice.client;
 
-import daniellsantaigo.study.commonclasses.model.Employee;
+import daniellsantiago.study.commonclasses.model.Employee;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

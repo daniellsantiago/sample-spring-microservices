@@ -1,4 +1,4 @@
-package daniellsantaigo.study.commonclasses.property;
+package daniellsantiago.study.commonclasses.security.property;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -2,9 +2,9 @@ package daniellsantiago.study.authservice.security.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nimbusds.jwt.SignedJWT;
-import daniellsantaigo.study.commonclasses.model.ApplicationUser;
-import daniellsantaigo.study.commonclasses.property.JwtConfiguration;
-import daniellsantiago.study.authservice.security.token.TokenCreator;
+import daniellsantiago.study.commonclasses.model.ApplicationUser;
+import daniellsantiago.study.commonclasses.security.property.JwtConfiguration;
+import daniellsantiago.study.commonclasses.security.token.TokenCreator;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

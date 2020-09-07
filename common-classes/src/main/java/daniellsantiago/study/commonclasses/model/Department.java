@@ -1,4 +1,4 @@
-package daniellsantaigo.study.commonclasses.model;
+package daniellsantiago.study.commonclasses.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package daniellsantiago.study.organizationservice.controller;
 
-import daniellsantaigo.study.commonclasses.model.Organization;
+import daniellsantiago.study.commonclasses.model.Organization;
 import daniellsantiago.study.organizationservice.service.OrganizationService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

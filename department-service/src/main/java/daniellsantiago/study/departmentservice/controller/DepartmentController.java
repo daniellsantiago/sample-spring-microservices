@@ -1,6 +1,6 @@
 package daniellsantiago.study.departmentservice.controller;
 
-import daniellsantaigo.study.commonclasses.model.Department;
+import daniellsantiago.study.commonclasses.model.Department;
 import daniellsantiago.study.departmentservice.service.DepartmentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
